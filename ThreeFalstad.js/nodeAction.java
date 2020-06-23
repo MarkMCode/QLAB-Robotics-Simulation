@@ -11,7 +11,7 @@ public void nodeAction() {	//Display value of selected node and inc. selected no
         	double post0Voltage = tempCNL.elm.volts[0];
         	double post1Voltage = tempCNL.elm.volts[1];
         	double current = tempCNL.elm.getCurrent();
-        	//Display info in buttons
+        	//Display info in button
 		buttonText += "<br>Link "+String.valueOf(links) +": ";	//Display link no.
 		buttonText += "<br>Type: " + type[0] + ", " + type[3];	//Display elm type
 		buttonText += "<br>Vd: " + String.valueOf(Math.round(voltageDiff * 100.0) / 100.0);//Display VDiff
