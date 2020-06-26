@@ -1,3 +1,4 @@
+//NOTE: This code snippet requires the int nodeCounter to have been previously declared
 public void nodeAction() {	//Display value of selected node and inc. selected node
 	String buttonText = "Node " + String.valueOf(nodeCounter) + ": ";	//String to store text to write to button
 	CircuitNode tempCN = getCircuitNode(nodeCounter);	//Select a node
