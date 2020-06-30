@@ -1,3 +1,4 @@
+//This code requires the -generateJsInteropExports compiler arguement to be passed
 package com.lushprojects.circuitjs1.client;
 import jsinterop.annotations.JsType;	//Required for JsInterop
 import jsinterop.annotations.JsPackage;	//Required for jsInterop
