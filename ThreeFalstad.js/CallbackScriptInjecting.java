@@ -24,5 +24,4 @@
 		}
 		
 	    };
-	  //ScriptInjector.fromUrl("three.js").inject();
 	  ScriptInjector.fromUrl("three.js").setCallback(threeCallback).inject();
