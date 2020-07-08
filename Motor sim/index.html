@@ -18,6 +18,7 @@
             let boxBody = null, cylinderBody = null, boxPivot = null, cylinderPivot = null // global declaration of joint data
             //Ammojs Initialization
             let moveDirection = { up: 0, down: 0 } // used to store button presses
+            let camDirection = { x: 0, y:0, z:0 }, camPos = { x:0, y:30, z:70 } // used for camera control
             
             Ammo().then( start )
             
@@ -118,12 +119,86 @@
                 let keyCode = event.keyCode;
                 switch(keyCode)
                 {
-                    case 38: //↑: up arrow
+                    // motor rotation
+                    case 16: // left shift
                     moveDirection.up = 1
                        break;
                        
-                    case 40: //↓: down arrow
+                    case 17: // left control
                     moveDirection.down = 1
+                       break;
+                       
+                    // camera control code
+                    case 13: // enter, resets camera
+                    camDirection.x = 0; camDirection.y = 0; camDirection.z = 0;
+                    camPos.x = 0; camPos.y = 30, camPos.z = 70;
+                    camera.position.set(camPos.x, camPos.y, camPos.z);
+                    camera.lookAt(new THREE.Vector3( camDirection.x, camDirection.y, camDirection.z));
+                        break;
+                        
+                    case 37: // left arrow, moves camera to left
+                    camDirection.x -= 5;
+                    camPos.x -= 5;
+                    camera.position.set( camPos.x, camPos.y, camPos.z );
+                    camera.lookAt(new THREE.Vector3( camDirection.x, camDirection.y, camDirection.z));
+                       break;
+                       
+                    case 38: // up arrow, moves camera up
+                    camDirection.y -= 5;
+                    camPos.y -= 5;
+                    camera.position.set( camPos.x, camPos.y, camPos.z );
+                    camera.lookAt(new THREE.Vector3( camDirection.x, camDirection.y, camDirection.z));
+                       break;
+                       
+                    case 39: // right arrow, moves camera right
+                    camDirection.x += 5;
+                    camPos.x += 5;
+                    camera.position.set( camPos.x, camPos.y, camPos.z );
+                    camera.lookAt(new THREE.Vector3( camDirection.x, camDirection.y, camDirection.z));
+                       break;
+                       
+                    case 40: // down arrow, moves camera down
+                    camDirection.y += 5;
+                    camPos.y += 5;
+                    camera.position.set( camPos.x, camPos.y, camPos.z );
+                    camera.lookAt(new THREE.Vector3( camDirection.x, camDirection.y, camDirection.z));
+                       break;
+                       
+                    case 65: // a, rotates camera left
+                    camDirection.x -= 5;
+                    camera.position.set( camPos.x, camPos.y, camPos.z );
+                    camera.lookAt(new THREE.Vector3( camDirection.x, camDirection.y, camDirection.z));
+                       break;
+                       
+                    case 68: // d, rotates camera right
+                    camDirection.x += 5;
+                    camera.position.set( camPos.x, camPos.y, camPos.z );
+                    camera.lookAt(new THREE.Vector3( camDirection.x, camDirection.y, camDirection.z));
+                       break;
+
+                    case 83: // s, rotates camera down
+                    camDirection.y -= 5;
+                    camera.position.set( camPos.x, camPos.y, camPos.z );
+                    camera.lookAt(new THREE.Vector3( camDirection.x, camDirection.y, camDirection.z));
+                       break;
+                    case 87: // w, rotates camera up
+                    camDirection.y += 5;
+                    camera.position.set( camPos.x, camPos.y, camPos.z );
+                    camera.lookAt(new THREE.Vector3( camDirection.x, camDirection.y, camDirection.z));
+                       break;
+                       
+                    case 187: // + \ =, moves camera away
+                    camDirection.z +=  5;
+                    camPos.z +=1;
+                    camera.position.set( camPos.x, camPos.y, camPos.z );
+                    camera.lookAt(new THREE.Vector3( camDirection.x, camDirection.y, camDirection.z));
+                       break;
+                       
+                    case 189: // - \ _, moves camera closer
+                    camDirection.z -= 5;
+                    camPos.z -=1;
+                    camera.position.set( camPos.x, camPos.y, camPos.z );
+                    camera.lookAt(new THREE.Vector3( camDirection.x, camDirection.y, camDirection.z));
                        break;
                 }
             }
@@ -132,12 +207,14 @@
             {
                 let keyCode = event.keyCode;
 
-                switch(keyCode){
-                    case 38: //↑: up arrow
+                switch(keyCode)
+                {
+                    // motor roation
+                    case 16: // left shift
                     moveDirection.up = 0
                        break;
                        
-                    case 40: //↓: down arrow
+                    case 17: // left control
                     moveDirection.down = 0
                        break;
                 }
