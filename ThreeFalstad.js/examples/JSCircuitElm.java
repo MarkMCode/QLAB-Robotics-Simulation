@@ -38,4 +38,11 @@ public class JSCircuitElm {
         }
         
     }
+    
+    //Set value
+    public void setValue(double value) {
+	EditInfo valueInfo = new EditInfo("Value", value);	//Create EditInfo
+	elm.setEditValue(0, valueInfo);				//Update value of elm
+	circuitjs1.mysim.needAnalyze();				//Analyze circuit
+    }
 }
