@@ -1,4 +1,4 @@
-//An inelegant solution to injecting scripts in a desired order
+//An inelegant solution to injecting scripts in a desired order.  Scripts are injected into the main body of the document
 //MotorSim is the simulation file
 
 //ammo.js callback, loads sim
@@ -8,7 +8,7 @@
 		}
 
 		public void onSuccess(Void result) {
-		    ScriptInjector.fromUrl("MotorSim.js").setWindow(ScriptInjector.TOP_WINDOW).inject();
+		    ScriptInjector.fromUrl("MotorSim.js").setWindow(ScriptInjector.TOP_WINDOW).inject();	//Inject MotorSim.js into TOP_WINDOW
 		}
 		
 	    };
@@ -20,10 +20,10 @@
 		}
 
 		public void onSuccess(Void result) {
-		    ScriptInjector.fromUrl("ammo.js").setCallback(ammoCallback).setWindow(ScriptInjector.TOP_WINDOW).inject();
+		    ScriptInjector.fromUrl("ammo.js").setCallback(ammoCallback).setWindow(ScriptInjector.TOP_WINDOW).inject(); //Inject ammo.js into TOP_WINDOW
 		}
 		
 	    };
 	  //ScriptInjector.fromUrl("Test.js").inject();
-	  ScriptInjector.fromUrl("three.js").setCallback(threeCallback).setWindow(ScriptInjector.TOP_WINDOW).inject();
+	  ScriptInjector.fromUrl("three.js").setCallback(threeCallback).setWindow(ScriptInjector.TOP_WINDOW).inject();	//Inject three.js into TOP_WINDOW
   	}
