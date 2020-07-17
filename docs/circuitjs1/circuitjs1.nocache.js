@@ -1,27 +1,461 @@
-function circuitjs1(){var O='bootstrap',P='begin',Q='gwt.codesvr.circuitjs1=',R='gwt.codesvr=',S='circuitjs1',T='startup',U='DUMMY',V=0,W=1,X='iframe',Y='javascript:""',Z='position:absolute; width:0; height:0; border:none; left: -1000px;',$=' top: -1000px;',_='CSS1Compat',ab='<!doctype html>',bb='',cb='<html><head><\/head><body><\/body><\/html>',db='undefined',eb='readystatechange',fb=10,gb='Chrome',hb='eval("',ib='");',jb='script',kb='javascript',lb='moduleStartup',mb='moduleRequested',nb='Failed to load ',ob='head',pb='meta',qb='name',rb='circuitjs1::',sb='::',tb='gwt:property',ub='content',vb='=',wb='gwt:onPropertyErrorFn',xb='Bad handler "',yb='" for "gwt:onPropertyErrorFn"',zb='gwt:onLoadErrorFn',Ab='" for "gwt:onLoadErrorFn"',Bb='#',Cb='?',Db='/',Eb='img',Fb='clear.cache.gif',Gb='baseUrl',Hb='circuitjs1.nocache.js',Ib='base',Jb='//',Kb='user.agent',Lb='webkit',Mb='safari',Nb='msie',Ob=11,Pb='ie10',Qb=9,Rb='ie9',Sb=8,Tb='ie8',Ub='gecko',Vb='gecko1_8',Wb=2,Xb=3,Yb=4,Zb='selectingPermutation',$b='circuitjs1.devmode.js',_b='A01743A55B8008F665AD715E82199511',ac='A9EF29EBC7378E8EB143F257169D02B1',bc='B186CD2B778334DCB13ED56B8A09BD18',cc='EC4B5A19A536163A5C276EB4CB5A3FB2',dc='FF84F5760CCA0BA8B192AB4515C58F0D',ec=':',fc='.cache.js',gc='link',hc='rel',ic='stylesheet',jc='href',kc='loadExternalRefs',lc='gwt/clean/clean.css',mc='end',nc='http:',oc='file:',pc='_gwt_dummy_',qc='__gwtDevModeHook:circuitjs1',rc='Ignoring non-whitelisted Dev Mode URL: ',sc=':moduleBase';var o=window;var p=document;r(O,P);function q(){var a=o.location.search;return a.indexOf(Q)!=-1||a.indexOf(R)!=-1}
-function r(a,b){if(o.__gwtStatsEvent){o.__gwtStatsEvent({moduleName:S,sessionId:o.__gwtStatsSessionId,subSystem:T,evtGroup:a,millis:(new Date).getTime(),type:b})}}
-circuitjs1.__sendStats=r;circuitjs1.__moduleName=S;circuitjs1.__errFn=null;circuitjs1.__moduleBase=U;circuitjs1.__softPermutationId=V;circuitjs1.__computePropValue=null;circuitjs1.__getPropMap=null;circuitjs1.__installRunAsyncCode=function(){};circuitjs1.__gwtStartLoadingFragment=function(){return null};circuitjs1.__gwt_isKnownPropertyValue=function(){return false};circuitjs1.__gwt_getMetaProperty=function(){return null};var s=null;var t=o.__gwt_activeModules=o.__gwt_activeModules||{};t[S]={moduleName:S};circuitjs1.__moduleStartupDone=function(e){var f=t[S].bindings;t[S].bindings=function(){var a=f?f():{};var b=e[circuitjs1.__softPermutationId];for(var c=V;c<b.length;c++){var d=b[c];a[d[V]]=d[W]}return a}};var u;function v(){w();return u}
-function w(){if(u){return}var a=p.createElement(X);a.src=Y;a.id=S;a.style.cssText=Z+$;a.tabIndex=-1;p.body.appendChild(a);u=a.contentDocument;if(!u){u=a.contentWindow.document}u.open();var b=document.compatMode==_?ab:bb;u.write(b+cb);u.close()}
-function A(k){function l(a){function b(){if(typeof p.readyState==db){return typeof p.body!=db&&p.body!=null}return /loaded|complete/.test(p.readyState)}
-var c=b();if(c){a();return}function d(){if(!c){if(!b()){return}c=true;a();if(p.removeEventListener){p.removeEventListener(eb,d,false)}if(e){clearInterval(e)}}}
-if(p.addEventListener){p.addEventListener(eb,d,false)}var e=setInterval(function(){d()},fb)}
-function m(c){function d(a,b){a.removeChild(b)}
-var e=v();var f=e.body;var g;if(navigator.userAgent.indexOf(gb)>-1&&window.JSON){var h=e.createDocumentFragment();h.appendChild(e.createTextNode(hb));for(var i=V;i<c.length;i++){var j=window.JSON.stringify(c[i]);h.appendChild(e.createTextNode(j.substring(W,j.length-W)))}h.appendChild(e.createTextNode(ib));g=e.createElement(jb);g.language=kb;g.appendChild(h);f.appendChild(g);d(f,g)}else{for(var i=V;i<c.length;i++){g=e.createElement(jb);g.language=kb;g.text=c[i];f.appendChild(g);d(f,g)}}}
-circuitjs1.onScriptDownloaded=function(a){l(function(){m(a)})};r(lb,mb);var n=p.createElement(jb);n.src=k;if(circuitjs1.__errFn){n.onerror=function(){circuitjs1.__errFn(S,new Error(nb+code))}}p.getElementsByTagName(ob)[V].appendChild(n)}
-circuitjs1.__startLoadingFragment=function(a){return D(a)};circuitjs1.__installRunAsyncCode=function(a){var b=v();var c=b.body;var d=b.createElement(jb);d.language=kb;d.text=a;c.appendChild(d);c.removeChild(d)};function B(){var c={};var d;var e;var f=p.getElementsByTagName(pb);for(var g=V,h=f.length;g<h;++g){var i=f[g],j=i.getAttribute(qb),k;if(j){j=j.replace(rb,bb);if(j.indexOf(sb)>=V){continue}if(j==tb){k=i.getAttribute(ub);if(k){var l,m=k.indexOf(vb);if(m>=V){j=k.substring(V,m);l=k.substring(m+W)}else{j=k;l=bb}c[j]=l}}else if(j==wb){k=i.getAttribute(ub);if(k){try{d=eval(k)}catch(a){alert(xb+k+yb)}}}else if(j==zb){k=i.getAttribute(ub);if(k){try{e=eval(k)}catch(a){alert(xb+k+Ab)}}}}}__gwt_getMetaProperty=function(a){var b=c[a];return b==null?null:b};s=d;circuitjs1.__errFn=e}
-function C(){function e(a){var b=a.lastIndexOf(Bb);if(b==-1){b=a.length}var c=a.indexOf(Cb);if(c==-1){c=a.length}var d=a.lastIndexOf(Db,Math.min(c,b));return d>=V?a.substring(V,d+W):bb}
-function f(a){if(a.match(/^\w+:\/\//)){}else{var b=p.createElement(Eb);b.src=a+Fb;a=e(b.src)}return a}
-function g(){var a=__gwt_getMetaProperty(Gb);if(a!=null){return a}return bb}
-function h(){var a=p.getElementsByTagName(jb);for(var b=V;b<a.length;++b){if(a[b].src.indexOf(Hb)!=-1){return e(a[b].src)}}return bb}
-function i(){var a=p.getElementsByTagName(Ib);if(a.length>V){return a[a.length-W].href}return bb}
-function j(){var a=p.location;return a.href==a.protocol+Jb+a.host+a.pathname+a.search+a.hash}
-var k=g();if(k==bb){k=h()}if(k==bb){k=i()}if(k==bb&&j()){k=e(p.location.href)}k=f(k);return k}
-function D(a){if(a.match(/^\//)){return a}if(a.match(/^[a-zA-Z]+:\/\//)){return a}return circuitjs1.__moduleBase+a}
-function F(){var f=[];var g=V;function h(a,b){var c=f;for(var d=V,e=a.length-W;d<e;++d){c=c[a[d]]||(c[a[d]]=[])}c[a[e]]=b}
-var i=[];var j=[];function k(a){var b=j[a](),c=i[a];if(b in c){return b}var d=[];for(var e in c){d[c[e]]=e}if(s){s(a,d,b)}throw null}
-j[Kb]=function(){var a=navigator.userAgent.toLowerCase();var b=p.documentMode;if(function(){return a.indexOf(Lb)!=-1}())return Mb;if(function(){return a.indexOf(Nb)!=-1&&(b>=fb&&b<Ob)}())return Pb;if(function(){return a.indexOf(Nb)!=-1&&(b>=Qb&&b<Ob)}())return Rb;if(function(){return a.indexOf(Nb)!=-1&&(b>=Sb&&b<Ob)}())return Tb;if(function(){return a.indexOf(Ub)!=-1||b>=Ob}())return Vb;return bb};i[Kb]={'gecko1_8':V,'ie10':W,'ie8':Wb,'ie9':Xb,'safari':Yb};__gwt_isKnownPropertyValue=function(a,b){return b in i[a]};circuitjs1.__getPropMap=function(){var a={};for(var b in i){if(i.hasOwnProperty(b)){a[b]=k(b)}}return a};circuitjs1.__computePropValue=k;o.__gwt_activeModules[S].bindings=circuitjs1.__getPropMap;r(O,Zb);if(q()){return D($b)}var l;try{h([Mb],_b);h([Vb],ac);h([Pb],bc);h([Tb],cc);h([Rb],dc);l=f[k(Kb)];var m=l.indexOf(ec);if(m!=-1){g=parseInt(l.substring(m+W),fb);l=l.substring(V,m)}}catch(a){}circuitjs1.__softPermutationId=g;return D(l+fc)}
-function G(){if(!o.__gwt_stylesLoaded){o.__gwt_stylesLoaded={}}function c(a){if(!__gwt_stylesLoaded[a]){var b=p.createElement(gc);b.setAttribute(hc,ic);b.setAttribute(jc,D(a));p.getElementsByTagName(ob)[V].appendChild(b);__gwt_stylesLoaded[a]=true}}
-r(kc,P);c(lc);r(kc,mc)}
-B();circuitjs1.__moduleBase=C();t[S].moduleBase=circuitjs1.__moduleBase;var H=F();if(o){var I=!!(o.location.protocol==nc||o.location.protocol==oc);o.__gwt_activeModules[S].canRedirect=I;function J(){var b=pc;try{o.sessionStorage.setItem(b,b);o.sessionStorage.removeItem(b);return true}catch(a){return false}}
-if(I&&J()){var K=qc;var L=o.sessionStorage[K];if(!/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\/.*$/.test(L)){if(L&&(window.console&&console.log)){console.log(rc+L)}L=bb}if(L&&!o[K]){o[K]=true;o[K+sc]=C();var M=p.createElement(jb);M.src=L;var N=p.getElementsByTagName(ob)[V];N.insertBefore(M,N.firstElementChild||N.children[V]);return false}}}G();r(O,mc);A(H);return true}
-circuitjs1.succeeded=circuitjs1();
+function circuitjs1(){
+  var $intern_0 = 'bootstrap', $intern_1 = 'begin', $intern_2 = 'gwt.codesvr.circuitjs1=', $intern_3 = 'gwt.codesvr=', $intern_4 = 'circuitjs1', $intern_5 = 'startup', $intern_6 = 'DUMMY', $intern_7 = 0, $intern_8 = 1, $intern_9 = 'iframe', $intern_10 = 'javascript:""', $intern_11 = 'position:absolute; width:0; height:0; border:none; left: -1000px;', $intern_12 = ' top: -1000px;', $intern_13 = 'CSS1Compat', $intern_14 = '<!doctype html>', $intern_15 = '', $intern_16 = '<html><head><\/head><body><\/body><\/html>', $intern_17 = 'undefined', $intern_18 = 'readystatechange', $intern_19 = 10, $intern_20 = 'script', $intern_21 = 'javascript', $intern_22 = 'Failed to load ', $intern_23 = 'moduleStartup', $intern_24 = 'scriptTagAdded', $intern_25 = 'moduleRequested', $intern_26 = 'meta', $intern_27 = 'name', $intern_28 = 'circuitjs1::', $intern_29 = '::', $intern_30 = 'gwt:property', $intern_31 = 'content', $intern_32 = '=', $intern_33 = 'gwt:onPropertyErrorFn', $intern_34 = 'Bad handler "', $intern_35 = '" for "gwt:onPropertyErrorFn"', $intern_36 = 'gwt:onLoadErrorFn', $intern_37 = '" for "gwt:onLoadErrorFn"', $intern_38 = '#', $intern_39 = '?', $intern_40 = '/', $intern_41 = 'img', $intern_42 = 'clear.cache.gif', $intern_43 = 'baseUrl', $intern_44 = 'circuitjs1.nocache.js', $intern_45 = 'base', $intern_46 = '//', $intern_47 = 'user.agent', $intern_48 = 'webkit', $intern_49 = 'safari', $intern_50 = 'msie', $intern_51 = 11, $intern_52 = 'ie10', $intern_53 = 9, $intern_54 = 'ie9', $intern_55 = 8, $intern_56 = 'ie8', $intern_57 = 'gecko', $intern_58 = 'gecko1_8', $intern_59 = 2, $intern_60 = 3, $intern_61 = 4, $intern_62 = 'selectingPermutation', $intern_63 = 'circuitjs1.devmode.js', $intern_64 = '0B81588C3257193431E35E77F7601B4E', $intern_65 = '5E59B5B48AB4D7B72C1FA0A87AE92509', $intern_66 = '6793A2E329B6E9CCFFBA3F91986F2FC2', $intern_67 = 'C524E3BCB7082E07A0C12762AEF5663A', $intern_68 = 'CEBCF2C11DA64BA23D8192ED9025B8C0', $intern_69 = ':', $intern_70 = '.cache.js', $intern_71 = 'link', $intern_72 = 'rel', $intern_73 = 'stylesheet', $intern_74 = 'href', $intern_75 = 'head', $intern_76 = 'loadExternalRefs', $intern_77 = 'gwt/clean/clean.css', $intern_78 = 'end', $intern_79 = 'http:', $intern_80 = 'file:', $intern_81 = '_gwt_dummy_', $intern_82 = '__gwtDevModeHook:circuitjs1', $intern_83 = 'Ignoring non-whitelisted Dev Mode URL: ', $intern_84 = ':moduleBase';
+  var $wnd = window;
+  var $doc = document;
+  sendStats($intern_0, $intern_1);
+  function isHostedMode(){
+    var query = $wnd.location.search;
+    return query.indexOf($intern_2) != -1 || query.indexOf($intern_3) != -1;
+  }
+
+  function sendStats(evtGroupString, typeString){
+    if ($wnd.__gwtStatsEvent) {
+      $wnd.__gwtStatsEvent({moduleName:$intern_4, sessionId:$wnd.__gwtStatsSessionId, subSystem:$intern_5, evtGroup:evtGroupString, millis:(new Date).getTime(), type:typeString});
+    }
+  }
+
+  circuitjs1.__sendStats = sendStats;
+  circuitjs1.__moduleName = $intern_4;
+  circuitjs1.__errFn = null;
+  circuitjs1.__moduleBase = $intern_6;
+  circuitjs1.__softPermutationId = $intern_7;
+  circuitjs1.__computePropValue = null;
+  circuitjs1.__getPropMap = null;
+  circuitjs1.__installRunAsyncCode = function(){
+  }
+  ;
+  circuitjs1.__gwtStartLoadingFragment = function(){
+    return null;
+  }
+  ;
+  circuitjs1.__gwt_isKnownPropertyValue = function(){
+    return false;
+  }
+  ;
+  circuitjs1.__gwt_getMetaProperty = function(){
+    return null;
+  }
+  ;
+  var __propertyErrorFunction = null;
+  var activeModules = $wnd.__gwt_activeModules = $wnd.__gwt_activeModules || {};
+  activeModules[$intern_4] = {moduleName:$intern_4};
+  circuitjs1.__moduleStartupDone = function(permProps){
+    var oldBindings = activeModules[$intern_4].bindings;
+    activeModules[$intern_4].bindings = function(){
+      var props = oldBindings?oldBindings():{};
+      var embeddedProps = permProps[circuitjs1.__softPermutationId];
+      for (var i = $intern_7; i < embeddedProps.length; i++) {
+        var pair = embeddedProps[i];
+        props[pair[$intern_7]] = pair[$intern_8];
+      }
+      return props;
+    }
+    ;
+  }
+  ;
+  var frameDoc;
+  function getInstallLocationDoc(){
+    setupInstallLocation();
+    return frameDoc;
+  }
+
+  function setupInstallLocation(){
+    if (frameDoc) {
+      return;
+    }
+    var scriptFrame = $doc.createElement($intern_9);
+    scriptFrame.src = $intern_10;
+    scriptFrame.id = $intern_4;
+    scriptFrame.style.cssText = $intern_11 + $intern_12;
+    scriptFrame.tabIndex = -1;
+    $doc.body.appendChild(scriptFrame);
+    frameDoc = scriptFrame.contentDocument;
+    if (!frameDoc) {
+      frameDoc = scriptFrame.contentWindow.document;
+    }
+    frameDoc.open();
+    var doctype = document.compatMode == $intern_13?$intern_14:$intern_15;
+    frameDoc.write(doctype + $intern_16);
+    frameDoc.close();
+  }
+
+  function installScript(filename){
+    function setupWaitForBodyLoad(callback){
+      function isBodyLoaded(){
+        if (typeof $doc.readyState == $intern_17) {
+          return typeof $doc.body != $intern_17 && $doc.body != null;
+        }
+        return /loaded|complete/.test($doc.readyState);
+      }
+
+      var bodyDone = isBodyLoaded();
+      if (bodyDone) {
+        callback();
+        return;
+      }
+      function checkBodyDone(){
+        if (!bodyDone) {
+          if (!isBodyLoaded()) {
+            return;
+          }
+          bodyDone = true;
+          callback();
+          if ($doc.removeEventListener) {
+            $doc.removeEventListener($intern_18, checkBodyDone, false);
+          }
+          if (onBodyDoneTimerId) {
+            clearInterval(onBodyDoneTimerId);
+          }
+        }
+      }
+
+      if ($doc.addEventListener) {
+        $doc.addEventListener($intern_18, checkBodyDone, false);
+      }
+      var onBodyDoneTimerId = setInterval(function(){
+        checkBodyDone();
+      }
+      , $intern_19);
+    }
+
+    function installCode(code_0){
+      var doc = getInstallLocationDoc();
+      var docbody = doc.body;
+      var script = doc.createElement($intern_20);
+      script.language = $intern_21;
+      script.src = code_0;
+      if (circuitjs1.__errFn) {
+        script.onerror = function(){
+          circuitjs1.__errFn($intern_4, new Error($intern_22 + code_0));
+        }
+        ;
+      }
+      docbody.appendChild(script);
+      sendStats($intern_23, $intern_24);
+    }
+
+    sendStats($intern_23, $intern_25);
+    setupWaitForBodyLoad(function(){
+      installCode(filename);
+    }
+    );
+  }
+
+  circuitjs1.__startLoadingFragment = function(fragmentFile){
+    return computeUrlForResource(fragmentFile);
+  }
+  ;
+  circuitjs1.__installRunAsyncCode = function(code_0){
+    var doc = getInstallLocationDoc();
+    var docbody = doc.body;
+    var script = doc.createElement($intern_20);
+    script.language = $intern_21;
+    script.text = code_0;
+    docbody.appendChild(script);
+  }
+  ;
+  function processMetas(){
+    var metaProps = {};
+    var propertyErrorFunc;
+    var onLoadErrorFunc;
+    var metas = $doc.getElementsByTagName($intern_26);
+    for (var i = $intern_7, n = metas.length; i < n; ++i) {
+      var meta = metas[i], name_0 = meta.getAttribute($intern_27), content;
+      if (name_0) {
+        name_0 = name_0.replace($intern_28, $intern_15);
+        if (name_0.indexOf($intern_29) >= $intern_7) {
+          continue;
+        }
+        if (name_0 == $intern_30) {
+          content = meta.getAttribute($intern_31);
+          if (content) {
+            var value_0, eq = content.indexOf($intern_32);
+            if (eq >= $intern_7) {
+              name_0 = content.substring($intern_7, eq);
+              value_0 = content.substring(eq + $intern_8);
+            }
+             else {
+              name_0 = content;
+              value_0 = $intern_15;
+            }
+            metaProps[name_0] = value_0;
+          }
+        }
+         else if (name_0 == $intern_33) {
+          content = meta.getAttribute($intern_31);
+          if (content) {
+            try {
+              propertyErrorFunc = eval(content);
+            }
+             catch (e) {
+              alert($intern_34 + content + $intern_35);
+            }
+          }
+        }
+         else if (name_0 == $intern_36) {
+          content = meta.getAttribute($intern_31);
+          if (content) {
+            try {
+              onLoadErrorFunc = eval(content);
+            }
+             catch (e) {
+              alert($intern_34 + content + $intern_37);
+            }
+          }
+        }
+      }
+    }
+    __gwt_getMetaProperty = function(name_0){
+      var value_0 = metaProps[name_0];
+      return value_0 == null?null:value_0;
+    }
+    ;
+    __propertyErrorFunction = propertyErrorFunc;
+    circuitjs1.__errFn = onLoadErrorFunc;
+  }
+
+  function computeScriptBase(){
+    function getDirectoryOfFile(path){
+      var hashIndex = path.lastIndexOf($intern_38);
+      if (hashIndex == -1) {
+        hashIndex = path.length;
+      }
+      var queryIndex = path.indexOf($intern_39);
+      if (queryIndex == -1) {
+        queryIndex = path.length;
+      }
+      var slashIndex = path.lastIndexOf($intern_40, Math.min(queryIndex, hashIndex));
+      return slashIndex >= $intern_7?path.substring($intern_7, slashIndex + $intern_8):$intern_15;
+    }
+
+    function ensureAbsoluteUrl(url_0){
+      if (url_0.match(/^\w+:\/\//)) {
+      }
+       else {
+        var img = $doc.createElement($intern_41);
+        img.src = url_0 + $intern_42;
+        url_0 = getDirectoryOfFile(img.src);
+      }
+      return url_0;
+    }
+
+    function tryMetaTag(){
+      var metaVal = __gwt_getMetaProperty($intern_43);
+      if (metaVal != null) {
+        return metaVal;
+      }
+      return $intern_15;
+    }
+
+    function tryNocacheJsTag(){
+      var scriptTags = $doc.getElementsByTagName($intern_20);
+      for (var i = $intern_7; i < scriptTags.length; ++i) {
+        if (scriptTags[i].src.indexOf($intern_44) != -1) {
+          return getDirectoryOfFile(scriptTags[i].src);
+        }
+      }
+      return $intern_15;
+    }
+
+    function tryBaseTag(){
+      var baseElements = $doc.getElementsByTagName($intern_45);
+      if (baseElements.length > $intern_7) {
+        return baseElements[baseElements.length - $intern_8].href;
+      }
+      return $intern_15;
+    }
+
+    function isLocationOk(){
+      var loc = $doc.location;
+      return loc.href == loc.protocol + $intern_46 + loc.host + loc.pathname + loc.search + loc.hash;
+    }
+
+    var tempBase = tryMetaTag();
+    if (tempBase == $intern_15) {
+      tempBase = tryNocacheJsTag();
+    }
+    if (tempBase == $intern_15) {
+      tempBase = tryBaseTag();
+    }
+    if (tempBase == $intern_15 && isLocationOk()) {
+      tempBase = getDirectoryOfFile($doc.location.href);
+    }
+    tempBase = ensureAbsoluteUrl(tempBase);
+    return tempBase;
+  }
+
+  function computeUrlForResource(resource){
+    if (resource.match(/^\//)) {
+      return resource;
+    }
+    if (resource.match(/^[a-zA-Z]+:\/\//)) {
+      return resource;
+    }
+    return circuitjs1.__moduleBase + resource;
+  }
+
+  function getCompiledCodeFilename(){
+    var answers = [];
+    var softPermutationId = $intern_7;
+    function unflattenKeylistIntoAnswers(propValArray, value_0){
+      var answer = answers;
+      for (var i = $intern_7, n = propValArray.length - $intern_8; i < n; ++i) {
+        answer = answer[propValArray[i]] || (answer[propValArray[i]] = []);
+      }
+      answer[propValArray[n]] = value_0;
+    }
+
+    var values = [];
+    var providers = [];
+    function computePropValue(propName){
+      var value_0 = providers[propName](), allowedValuesMap = values[propName];
+      if (value_0 in allowedValuesMap) {
+        return value_0;
+      }
+      var allowedValuesList = [];
+      for (var k in allowedValuesMap) {
+        allowedValuesList[allowedValuesMap[k]] = k;
+      }
+      if (__propertyErrorFunction) {
+        __propertyErrorFunction(propName, allowedValuesList, value_0);
+      }
+      throw null;
+    }
+
+    providers[$intern_47] = function(){
+      var ua = navigator.userAgent.toLowerCase();
+      var docMode = $doc.documentMode;
+      if (function(){
+        return ua.indexOf($intern_48) != -1;
+      }
+      ())
+        return $intern_49;
+      if (function(){
+        return ua.indexOf($intern_50) != -1 && (docMode >= $intern_19 && docMode < $intern_51);
+      }
+      ())
+        return $intern_52;
+      if (function(){
+        return ua.indexOf($intern_50) != -1 && (docMode >= $intern_53 && docMode < $intern_51);
+      }
+      ())
+        return $intern_54;
+      if (function(){
+        return ua.indexOf($intern_50) != -1 && (docMode >= $intern_55 && docMode < $intern_51);
+      }
+      ())
+        return $intern_56;
+      if (function(){
+        return ua.indexOf($intern_57) != -1 || docMode >= $intern_51;
+      }
+      ())
+        return $intern_58;
+      return $intern_15;
+    }
+    ;
+    values[$intern_47] = {'gecko1_8':$intern_7, 'ie10':$intern_8, 'ie8':$intern_59, 'ie9':$intern_60, 'safari':$intern_61};
+    __gwt_isKnownPropertyValue = function(propName, propValue){
+      return propValue in values[propName];
+    }
+    ;
+    circuitjs1.__getPropMap = function(){
+      var result = {};
+      for (var key in values) {
+        if (values.hasOwnProperty(key)) {
+          result[key] = computePropValue(key);
+        }
+      }
+      return result;
+    }
+    ;
+    circuitjs1.__computePropValue = computePropValue;
+    $wnd.__gwt_activeModules[$intern_4].bindings = circuitjs1.__getPropMap;
+    sendStats($intern_0, $intern_62);
+    if (isHostedMode()) {
+      return computeUrlForResource($intern_63);
+    }
+    var strongName;
+    try {
+      unflattenKeylistIntoAnswers([$intern_56], $intern_64);
+      unflattenKeylistIntoAnswers([$intern_52], $intern_65);
+      unflattenKeylistIntoAnswers([$intern_58], $intern_66);
+      unflattenKeylistIntoAnswers([$intern_54], $intern_67);
+      unflattenKeylistIntoAnswers([$intern_49], $intern_68);
+      strongName = answers[computePropValue($intern_47)];
+      var idx = strongName.indexOf($intern_69);
+      if (idx != -1) {
+        softPermutationId = parseInt(strongName.substring(idx + $intern_8), $intern_19);
+        strongName = strongName.substring($intern_7, idx);
+      }
+    }
+     catch (e) {
+    }
+    circuitjs1.__softPermutationId = softPermutationId;
+    return computeUrlForResource(strongName + $intern_70);
+  }
+
+  function loadExternalStylesheets(){
+    if (!$wnd.__gwt_stylesLoaded) {
+      $wnd.__gwt_stylesLoaded = {};
+    }
+    function installOneStylesheet(stylesheetUrl){
+      if (!__gwt_stylesLoaded[stylesheetUrl]) {
+        var l = $doc.createElement($intern_71);
+        l.setAttribute($intern_72, $intern_73);
+        l.setAttribute($intern_74, computeUrlForResource(stylesheetUrl));
+        $doc.getElementsByTagName($intern_75)[$intern_7].appendChild(l);
+        __gwt_stylesLoaded[stylesheetUrl] = true;
+      }
+    }
+
+    sendStats($intern_76, $intern_1);
+    installOneStylesheet($intern_77);
+    sendStats($intern_76, $intern_78);
+  }
+
+  processMetas();
+  circuitjs1.__moduleBase = computeScriptBase();
+  activeModules[$intern_4].moduleBase = circuitjs1.__moduleBase;
+  var filename = getCompiledCodeFilename();
+  if ($wnd) {
+    var devModePermitted = !!($wnd.location.protocol == $intern_79 || $wnd.location.protocol == $intern_80);
+    $wnd.__gwt_activeModules[$intern_4].canRedirect = devModePermitted;
+    function supportsSessionStorage(){
+      var key = $intern_81;
+      try {
+        $wnd.sessionStorage.setItem(key, key);
+        $wnd.sessionStorage.removeItem(key);
+        return true;
+      }
+       catch (e) {
+        return false;
+      }
+    }
+
+    if (devModePermitted && supportsSessionStorage()) {
+      var devModeKey = $intern_82;
+      var devModeUrl = $wnd.sessionStorage[devModeKey];
+      if (!/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\/.*$/.test(devModeUrl)) {
+        if (devModeUrl && (window.console && console.log)) {
+          console.log($intern_83 + devModeUrl);
+        }
+        devModeUrl = $intern_15;
+      }
+      if (devModeUrl && !$wnd[devModeKey]) {
+        $wnd[devModeKey] = true;
+        $wnd[devModeKey + $intern_84] = computeScriptBase();
+        var devModeScript = $doc.createElement($intern_20);
+        devModeScript.src = devModeUrl;
+        var head = $doc.getElementsByTagName($intern_75)[$intern_7];
+        head.insertBefore(devModeScript, head.firstElementChild || head.children[$intern_7]);
+        return false;
+      }
+    }
+  }
+  loadExternalStylesheets();
+  sendStats($intern_0, $intern_78);
+  installScript(filename);
+  return true;
+}
+
+circuitjs1.succeeded = circuitjs1();
