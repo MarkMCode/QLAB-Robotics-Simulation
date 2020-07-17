@@ -2,7 +2,9 @@
 A repo to document the development of QLAB's robotics simulator based on CircuitJS1 (https://github.com/pfalstad/circuitjs1), Ammo.js (https://github.com/kripken/ammo.js/) and Three.js (https://github.com/mrdoob/three.js/)
 
 Ammo.js used under the following license: https://github.com/kripken/ammo.js/blob/master/LICENSE
+
 Three.js used under the following license https://github.com/mrdoob/three.js/blob/dev/LICENSE
+
 CircuitJS1 used under the following license: https://github.com/pfalstad/circuitjs1/blob/master/COPYING.txt
 
 # ThreeFalstad
