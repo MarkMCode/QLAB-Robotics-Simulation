@@ -1,3 +1,4 @@
+//Created by Matthew Reaney, cylinder physics updated by Mark Megarry June-July 2020			
 			//variable declaration
             let physicsWorld, scene, camera, renderer, rigidBodies = [], tmpTrans = null
             let Cylinder = null // global declaration of moving part
@@ -351,18 +352,17 @@
             {
                 let scalingFactor = 1; // changes speed of rotation
                 //Get variables
-                iPrev = i;
+                iPrev = i;					//Previous current value
                 i = resistor.getCurrent();	//Current
-                iDot = (i - iPrev)/deltaTime;
+                iDot = (i - iPrev)/deltaTime;	//Derivative of current
                 v = source.getVoltageDiff();
                 L = 0.5;	//Set value for now
                 R = 1;      //Set value for now
                 K = 1	// EMF and torque constant
                 let angularV = (v - R*i - L*iDot)/K;	//Angular velocity
                 let EMF = K*angularV;		//Back-EMF
-                console.log(angularV);
                 let resultantImpulse = new Ammo.btVector3( angularV, 0, 0 ) // rotation vector
-                //resultantImpulse.op_mul(scalingFactor);
+                //resultantImpulse.op_mul(scalingFactor);	//Scale impulse
                 let physicsBody = Cylinder.userData.physicsBody;
                 physicsBody.setAngularVelocity( resultantImpulse );	//Set angular velocity
                 backEMF.setVoltage(EMF);	//Set back-EMF
