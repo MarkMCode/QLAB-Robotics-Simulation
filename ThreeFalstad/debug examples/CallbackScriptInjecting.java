@@ -1,4 +1,4 @@
-//Created by Mark Megarry in July 2020 as a debug example for ThreeFalstad.js
+//Created by Mark Megarry in July 2020 as a debug example for ThreeFalstad
 //An inelegant solution to injecting scripts in a desired order.  Scripts are injected into the main body of the document
 //MotorSim is the simulation file
 

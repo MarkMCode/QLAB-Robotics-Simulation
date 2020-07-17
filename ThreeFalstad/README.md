@@ -1,10 +1,10 @@
-# ThreeFalstad.js
+# ThreeFalstad
 
 ## Introduction
 
-ThreeFalstad.js is a simulator combining circuit simulation (provided by CircuitJS1) and physics simulation (provided by Three.js and Ammo.js). 
+ThreeFalstad is a simulator combining circuit simulation (provided by CircuitJS1) and physics simulation (provided by Three.js and Ammo.js). 
 
-ThreeFalstad.js is currently being developed by Mark Megarry (mmegarry1@gmail.com) with a great amount of support from John Bustard, Matthew Reaney, Sam Ross and Joseph Stevenson.
+ThreeFalstad is currently being developed by Mark Megarry (mmegarry1@gmail.com) with a great amount of support from John Bustard, Matthew Reaney, Sam Ross and Joseph Stevenson.
 
 CircuitJS1 is provided under the GPLv2 license and is availalbe at https://github.com/pfalstad/circuitjs1
 
@@ -16,7 +16,7 @@ Ammo.js is provided under the MIT License and is available at https://github.com
 ***TODO***
 
 ## Running
-To run ThreeFalstad.js, run /war/circuitjs.html.  By default, the circuit loaded will be /war/circuitjs1/circuits/MotorSim.txt and the physics simulation loaded will be /war/js/MotorSim.js
+To run ThreeFalstad, run /war/circuitjs.html.  By default, the circuit loaded will be /war/circuitjs1/circuits/MotorSim.txt and the physics simulation loaded will be /war/js/MotorSim.js
 
 
 ## License

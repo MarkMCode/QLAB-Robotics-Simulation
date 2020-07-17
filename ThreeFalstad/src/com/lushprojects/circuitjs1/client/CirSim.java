@@ -1,4 +1,4 @@
-//Edited by Mark Megarry in June-July 2020 for use in ThreeFalstad.js, original code by Paul Falstad and Iain Sharp
+//Edited by Mark Megarry in June-July 2020 for use in ThreeFalstad, original code by Paul Falstad and Iain Sharp
 /*    
     Copyright (C) Paul Falstad and Iain Sharp
     

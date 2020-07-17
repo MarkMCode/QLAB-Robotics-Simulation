@@ -1,4 +1,4 @@
-//Created by Mark Megarry in July 2020 as a debug example for ThreeFalstad.js
+//Created by Mark Megarry in July 2020 as a debug example for ThreeFalstad
 double oldTransform[] = Arrays.copyOf(transform, 6);	//Save transform
 Context2d context = cv.getContext2d();	//Create context2d from cv
 	for(int elm = 0; elm<elmList.size(); elm++) {

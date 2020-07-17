@@ -1,4 +1,4 @@
-//Created by Mark Megarry in July 2020 as a debug example for ThreeFalstad.js
+//Created by Mark Megarry in July 2020 as a debug example for ThreeFalstad
 //This code requires the -generateJsInteropExports compiler argument to be passed
 package com.lushprojects.circuitjs1.client;
 import jsinterop.annotations.JsType;	//Required for JsInterop
