@@ -11,6 +11,8 @@ ThreeFalstad is a JavaScript-based simulator which combines the electrical simul
 
 - CircuitJS1 used under the following license: https://github.com/pfalstad/circuitjs1/blob/master/COPYING.txt
 
+- ThreeFalstad as a derivative work of CircuitJS1, Ammmo.js and Three.js is under the GPLv2 License, for more information please see /ThreeFalstad/License.txt.
+
 **This project is currently early in development and is therefore not guaranteed to behave as expected.**
 
 **Instructions may be incomplete or incorrect.**
