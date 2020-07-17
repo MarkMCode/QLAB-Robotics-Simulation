@@ -1,3 +1,4 @@
+//Created by Mark Megarry in July 2020 as a debug example for ThreeFalstad.js
 //NOTE: This code snippet requires the int nodeCounter to have been previously declared
 public void nodeAction() {	//Display value of selected node and inc. selected node
 	String buttonText = "Node " + String.valueOf(nodeCounter) + ": ";	//String to store text to write to button
