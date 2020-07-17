@@ -203,7 +203,6 @@ public class circuitjs1 implements EntryPoint {
 	     Element motorScript = DOM.createElement("script");
 	     motorScript.setPropertyString("type", "text/javascript");
 	     motorScript.setPropertyString("src", "js/MotorSim.js");
-	     motorScript.setPropertyString("type", "text/javascript");
 	     DOM.appendChild(DOM.getElementById("scene3d"), motorScript);
 		     
   	}
