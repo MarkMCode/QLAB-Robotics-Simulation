@@ -5,11 +5,11 @@ A repo to document the development of QLAB's robotics simulator based on Circuit
 ThreeFalstad is a JavaScript-based simulator which combines the electrical simulation of CircuitJS1 with the physics simulation of Three.js and Ammo.js.  For more information, see /ThreeFalstad/README.md.
 
 ## Licenses
-- Ammo.js used under the following license: https://github.com/kripken/ammo.js/blob/master/LICENSE
+- Ammo.js is used under the following license: https://github.com/kripken/ammo.js/blob/master/LICENSE
 
-- Three.js used under the following license https://github.com/mrdoob/three.js/blob/dev/LICENSE
+- Three.js is used under the following license https://github.com/mrdoob/three.js/blob/dev/LICENSE
 
-- CircuitJS1 used under the following license: https://github.com/pfalstad/circuitjs1/blob/master/COPYING.txt
+- CircuitJS1 is used under the following license: https://github.com/pfalstad/circuitjs1/blob/master/COPYING.txt
 
 - ThreeFalstad as a derivative work of CircuitJS1, Ammmo.js and Three.js is under the GPLv2 License, for more information please see /ThreeFalstad/License.txt.
 
