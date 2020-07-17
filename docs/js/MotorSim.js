@@ -1,6 +1,6 @@
 //Created by Matthew Reaney, cylinder physics updated by Mark Megarry June-July 2020			
-			//variable declaration
-			while(typeof JSCircuitElm == 'undefined'){}	//Wait for JSCircuitElm to load
+			var inductor = new JSCircuitElm(2);
+			while(typeof inductor.getCurrent(); == 'undefined'){}	//Wait for JSCircuitElm to load
             let physicsWorld, scene, camera, renderer, rigidBodies = [], tmpTrans = null
             let Cylinder = null // global declaration of moving part
             const STATE = { DISABLE_DEACTIVATION : 4 } // enables dynamic motion
