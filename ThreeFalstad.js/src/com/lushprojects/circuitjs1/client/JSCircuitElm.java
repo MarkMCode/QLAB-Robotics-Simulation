@@ -1,4 +1,4 @@
-//Created by Mark Megarry June-July 2020 for use with Falstad circuit simulator in ThreeFalstad.js
+//Created by Mark Megarry June-July 2020 for use with CircuitJS1 circuit simulator in ThreeFalstad.js
 //This code requires the -generateJsInteropExports compiler argument to be passed
 package com.lushprojects.circuitjs1.client;
 import jsinterop.annotations.JsType;	//Required for JsInterop
