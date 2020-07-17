@@ -4,7 +4,7 @@
 
 ThreeFalstad.js is a simulator combining circuit simulation (in the form of CircuitJS1) and physics simulation (in the form of Three.js and Ammo.js). 
 
-ThreeFalstad.js is currently being developed by Mark Megarry (mmegarry1@gmail.com) with a great amount of support from John Bustard and Matthew Reaney.
+ThreeFalstad.js is currently being developed by Mark Megarry (mmegarry1@gmail.com) with a great amount of support from John Bustard, Matthew Reaney, Sam Ross and Joseph Stevenson.
 
 CircuitJS1 is provided under the GPLv2 license and is availalbe at https://github.com/pfalstad/circuitjs1
 
