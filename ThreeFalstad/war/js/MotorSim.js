@@ -13,7 +13,8 @@
             var resistor = new JSCircuitElm(1);
             var source = new JSCircuitElm(0);
             var backEMF = new JSCircuitElm(6);
-            let thetaDot = 0, K = 0.1, i = resistor.getCurrent(), v = source.getVoltageDiff(), L = 1, iDot = 0, R = 0.5, J = 0.01, b=0.1;
+            let thetaDot = 0, K = 0.1, v = source.getVoltageDiff(), L = 1, iDot = 0, R = 0.5, J = 0.01, b=0.1;
+            var i = resistor.getCurrent();
             
             Ammo().then( start )
             
