@@ -30,7 +30,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-- CircuitJS1 is used under following license: https://github.com/pfalstad/circuitjs1/blob/master/COPYING.txt) and is availalbe at https://github.com/pfalstad/circuitjs1
+- CircuitJS1 is used under following license: https://github.com/pfalstad/circuitjs1/blob/master/COPYING.txt and is availalbe at https://github.com/pfalstad/circuitjs1
 
 - Three.js is used under the following license: https://github.com/mrdoob/three.js/blob/dev/LICENSE and is available at https://github.com/mrdoob/three.js 
 
