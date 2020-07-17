@@ -6,11 +6,11 @@ ThreeFalstad is a simulator combining circuit simulation (provided by CircuitJS1
 
 ThreeFalstad is currently being developed by Mark Megarry (mmegarry1@gmail.com) with a great amount of support from John Bustard, Matthew Reaney, Sam Ross and Joseph Stevenson.
 
-CircuitJS1 is provided under the GPLv2 license and is availalbe at https://github.com/pfalstad/circuitjs1
+CircuitJS1 is provided under the GPLv2 license (https://github.com/pfalstad/circuitjs1/blob/master/COPYING.txt) and is availalbe at https://github.com/pfalstad/circuitjs1
 
-Three.js is provided under the MIT License and is available at https://github.com/mrdoob/three.js 
+Three.js is provided under the MIT License (https://github.com/mrdoob/three.js/blob/dev/LICENSE) and is available at https://github.com/mrdoob/three.js 
 
-Ammo.js is provided under the MIT License and is available at https://github.com/kripken/ammo.js
+Ammo.js (provided under the following license: https://github.com/kripken/ammo.js/blob/master/LICENSE) is available at https://github.com/kripken/ammo.js
 
 ## Building
 ***TODO***
