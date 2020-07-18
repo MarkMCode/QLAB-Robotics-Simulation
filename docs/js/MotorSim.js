@@ -3,6 +3,10 @@
             while(typeof inductor === "undefined"){
                         console.log("Can't reach CircuitJS1");           
             }
+            var source = new JSCircuitElm(0);
+            while(typeof source === "undefined"){
+                        console.log("Can't reach CircuitJS1");           
+            }
             let physicsWorld, scene, camera, renderer, rigidBodies = [], tmpTrans = null
             let Cylinder = null // global declaration of moving part
             const STATE = { DISABLE_DEACTIVATION : 4 } // enables dynamic motion
