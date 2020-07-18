@@ -199,11 +199,6 @@ public class circuitjs1 implements EntryPoint {
 	     */
 	    
 	     mysim.updateCircuit();
-	     //Insert motor sim etc, ADDED BY MARK MEGARRY
-	     Element motorScript = DOM.createElement("script");
-	     motorScript.setPropertyString("type", "text/javascript");
-	     motorScript.setPropertyString("src", "js/MotorSim.js");
-	     DOM.appendChild(DOM.getElementById("scene3d"), motorScript);
 		     
   	}
   }
