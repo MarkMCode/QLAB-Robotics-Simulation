@@ -1,6 +1,6 @@
 //Created by Matthew Reaney, cylinder physics updated by Mark Megarry June-July 2020
             var inductor = new JSCircuitElm(2);
-            while(typeof inductor.getCurrent() != 'number'){
+            while(typeof inductor.getCurrent() === "undefined"){
                         console.log("Can't reach CircuitJS1");           
             }
             let physicsWorld, scene, camera, renderer, rigidBodies = [], tmpTrans = null
