@@ -1,8 +1,7 @@
-//Created by Matthew Reaney, cylinder physics updated by Mark Megarry June-July 2020
-            while(typeof JSCircuitElm === "undefined"){
-                        console.log("Can't reach CircuitJS1");           
-            }
-
+//Created by Matthew Reaney, cylinder physics updated by Mark Megarry June-July 2020			
+			//variable declaration
+			var inductor = new JSCircuitElm(2);
+			while(typeof inductor.getCurrent() == 'undefined'){}	//Wait for JSCircuitElm to load
             let physicsWorld, scene, camera, renderer, rigidBodies = [], tmpTrans = null
             let Cylinder = null // global declaration of moving part
             const STATE = { DISABLE_DEACTIVATION : 4 } // enables dynamic motion
@@ -15,8 +14,7 @@
             var resistor = new JSCircuitElm(1);
             var source = new JSCircuitElm(0);
             var backEMF = new JSCircuitElm(6);
-            let thetaDot = 0, K = 0.1, v = source.getVoltageDiff(), L = 1, iDot = 0, R = 0.5, J = 0.01, b=0.1;
-            var i = resistor.getCurrent();
+            let thetaDot = 0, K = 0.1, i = resistor.getCurrent(), v = source.getVoltageDiff(), L = 1, iDot = 0, R = 0.5, J = 0.01, b=0.1;
             
             Ammo().then( start )
             

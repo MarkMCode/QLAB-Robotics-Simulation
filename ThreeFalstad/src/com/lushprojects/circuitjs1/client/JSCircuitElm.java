@@ -2,6 +2,9 @@
 //This code requires the -generateJsInteropExports compiler argument to be passed
 package com.lushprojects.circuitjs1.client;
 import jsinterop.annotations.JsType;	//Required for JsInterop
+
+import com.gargoylesoftware.htmlunit.javascript.host.Console;
+
 import jsinterop.annotations.JsPackage;	//Required for jsInterop
 
 @JsType(isNative = false, namespace = JsPackage.GLOBAL)	//JsInterop setup
@@ -12,6 +15,7 @@ public class JSCircuitElm {
     }-*/;
     CircuitElm elm;	//Element object
     public JSCircuitElm(int elm) {	//Constructor, assigns elm to element
+	while(circuitjs1.mysim.elmList.size() == 0) {console("ERROR: ELM LIST IS EMPTY");}
         this.elm = circuitjs1.mysim.getElm(elm); 
     }
     //Get voltage difference
