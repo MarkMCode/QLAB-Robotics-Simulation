@@ -15,7 +15,6 @@ public class JSCircuitElm {
     }-*/;
     CircuitElm elm;	//Element object
     public JSCircuitElm(int elm) {	//Constructor, assigns elm to element
-	while(circuitjs1.mysim.elmList.size() == 0) {console("ERROR: ELM LIST IS EMPTY");}
         this.elm = circuitjs1.mysim.getElm(elm); 
     }
     //Get voltage difference
@@ -66,5 +65,10 @@ public class JSCircuitElm {
     //Get current of element
     public double getPower() {
 	return elm.getPower();
+    }
+    
+    //Get ElmList size
+    public int getElmListSize() {
+	return circuitjs1.mysim.elmList.size();
     }
 }
