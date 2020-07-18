@@ -1,4 +1,6 @@
-//Created by Matthew Reaney, cylinder physics updated by Mark Megarry June-July 2020			
+//Created by Matthew Reaney, cylinder physics updated by Mark Megarry June-July 2020	
+$(document).ready(function(){
+    alert("hi");}
 			var inductor = new JSCircuitElm(2);
 			while(typeof inductor.getCurrent() == 'undefined'){}	//Wait for JSCircuitElm to load
             let physicsWorld, scene, camera, renderer, rigidBodies = [], tmpTrans = null
