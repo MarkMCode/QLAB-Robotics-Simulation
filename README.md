@@ -4,7 +4,7 @@ A repo to document the development of QLAB's robotics simulator incorporating Ci
 ## ThreeFalstad
 ThreeFalstad is a JavaScript-based simulator which combines the electrical simulation of CircuitJS1 with the physics simulation of Three.js and Ammo.js.  For more information, see /ThreeFalstad/README.md.
 
-***Try the proof-of-concept DC motor simulation at https://markmegarry.github.io/QLAB-Robotics-Simulation/ ***
+***Try the proof-of-concept DC motor simulation at https://markmegarry.github.io/QLAB-Robotics-Simulation/***
 
 - Press the "Start physics sim" button and slide the voltage slider to vary the voltage applied to the motor
 
