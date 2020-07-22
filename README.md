@@ -19,6 +19,8 @@ ThreeFalstad is a JavaScript-based simulator which combines the electrical simul
 
 - GWT is used under the following license: http://www.gwtproject.org/terms.html
 
+-AVR8js is used under the following license: https://github.com/wokwi/avr8js/blob/master/LICENSE
+
 - ThreeFalstad as a derivative work of CircuitJS1, Ammo.js and Three.js is under the GNU General Public License Version 2.  For more information, please see /ThreeFalstad/License.txt.
 
 **This project is currently early in development and is therefore not guaranteed to behave as expected.**
