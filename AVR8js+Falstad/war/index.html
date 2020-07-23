@@ -2,7 +2,7 @@
 <html>
   <head>
   	<meta charset="UTF-8">
-	<!--meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>AVR8js+Falstad</title>
 	<link rel="stylesheet" href="/AVR8js/src.18500bcb.css">
   
@@ -105,7 +105,6 @@
   <body>
   <!-- Include the next line to allow support for dropbox import/export. You will need your own app key. -->
   <!--<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="YOUR_KEY"></script>-->
-
    
     <!-- This script tag is what actually loads the GWT module.  The -->
     <!-- 'nocache.js' file (also called a "selection script") is     -->
@@ -122,15 +121,16 @@
 			<h2>AVR8js LED Demo</h2> 
 			<div class="app-container"> 
 				<div class="toolbar"> 
+				    
 					<button id="run-button">Run</button> 
 					<button id="stop-button" disabled="">Stop</button> 
 					<div class="spacer"></div> <div id="status-label"></div> 
 				</div> 
 				<div> 
-					<textarea id="textInput" rows="10" cols="100"></textarea> 
+					<!--Script uses AVR8js, used under the following license: https://github.com/wokwi/avr8js/blob/master/LICENSE -->
+					<script src="/AVR8js/src.fbd0c9ad.js"></script>
+					<textarea id="textInput" rows="20" cols="100" style="line-height: 1.2em;"></textarea> 
 				</div> 
-				<!--Script uses AVR8js, used under the following license: https://github.com/wokwi/avr8js/blob/master/LICENSE -->
-				<script src="/AVR8js/src.c426ce52.js"></script>
 			</div>
 	</div>
     

@@ -3,7 +3,7 @@
 package com.lushprojects.circuitjs1.client;
 import jsinterop.annotations.JsType;	//Required for JsInterop
 
-import com.gargoylesoftware.htmlunit.javascript.host.Console;
+//import com.gargoylesoftware.htmlunit.javascript.host.Console;
 
 import jsinterop.annotations.JsPackage;	//Required for jsInterop
 
