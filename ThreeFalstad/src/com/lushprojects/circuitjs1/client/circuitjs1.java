@@ -93,10 +93,7 @@ public class circuitjs1 implements EntryPoint {
       
       loadLocale();
       
-      Element motorScript = DOM.createElement("script");
-      motorScript.setPropertyString("type", "text/javascript");
-      motorScript.setPropertyString("src", "js/MotorSim.js");
-      DOM.appendChild(DOM.getElementById("scene3d"), motorScript);
+
   }
 
   native String language()  /*-{ // Modified to support Electron which return empty array for navigator.languages

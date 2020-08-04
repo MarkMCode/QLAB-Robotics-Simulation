@@ -105,7 +105,7 @@ MouseOutHandler, MouseWheelHandler {
     Button elmButton;	//ADDED BY MARK MEGARRY
     int nodeCounter = 0; //ADDED BY MARK MEGARRY
     boolean elmInfoFlag = false; //ADDED BY MARK MEGARRY
-    //Button PhysicsButton;	//Added by Mark Megarry
+    Button PhysicsButton;	//Added by Mark Megarry
     Button runStopButton;
     Button dumpMatrixButton;
     MenuItem aboutItem;
@@ -576,13 +576,13 @@ MouseOutHandler, MouseWheelHandler {
 		 elmButton.setStylePrimaryName("topButton");
 		 
 		 //Start physics sim BUTTON ADDED BY MARK MEGARRY
-		 /*verticalPanel.add(PhysicsButton = new Button(LS("Start physics sim")));
+		 verticalPanel.add(PhysicsButton = new Button(LS("Start physics sim")));
 		 PhysicsButton.addClickHandler(new ClickHandler() {
 			    public void onClick(ClickEvent event) {
 			      physicsInject();
 			    }
 			  });
-		 PhysicsButton.setStylePrimaryName("topButton");*/
+		 PhysicsButton.setStylePrimaryName("topButton");
 		 
 	
 	if (LoadFile.isSupported())
@@ -2664,12 +2664,12 @@ MouseOutHandler, MouseWheelHandler {
     }
     
     //Physics injection added by Mark Megarry
-    /*public void physicsInject() {
+    public void physicsInject() {
 	     Element motorScript = DOM.createElement("script");
 	     motorScript.setPropertyString("type", "text/javascript");
 	     motorScript.setPropertyString("src", "js/MotorSim.js");
 	     DOM.appendChild(DOM.getElementById("scene3d"), motorScript);
-    }*/
+    }
     
     
     public void menuPerformed(String menu, String item) {
