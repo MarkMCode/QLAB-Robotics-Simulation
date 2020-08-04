@@ -92,6 +92,12 @@ public class circuitjs1 implements EntryPoint {
       localizationMap = new HashMap<String,String>();
       
       loadLocale();
+      
+      //Add Arduino sim
+	     Element motorScript = DOM.createElement("script");
+	     motorScript.setPropertyString("type", "text/javascript");
+	     motorScript.setPropertyString("src", "AVR8js/src.78ab1402.js");
+	     DOM.appendChild(DOM.getElementById("scene3d"), motorScript);
   }
 
   native String language()  /*-{ // Modified to support Electron which return empty array for navigator.languages
@@ -200,10 +206,10 @@ public class circuitjs1 implements EntryPoint {
 	    
 	     mysim.updateCircuit();
 	     
-	     //Add Arduino sim
-	     /*Element motorScript = DOM.createElement("script");
+	     /*//Add Arduino sim
+	     Element motorScript = DOM.createElement("script");
 	     motorScript.setPropertyString("type", "text/javascript");
-	     motorScript.setPropertyString("src", "js/MotorSim.js");
+	     motorScript.setPropertyString("src", "AVR8js/src.ccbec474.js");
 	     DOM.appendChild(DOM.getElementById("scene3d"), motorScript);*/
 		     
   	}

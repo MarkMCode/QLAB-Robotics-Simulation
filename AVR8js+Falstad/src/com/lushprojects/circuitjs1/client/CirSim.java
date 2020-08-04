@@ -832,6 +832,7 @@ MouseOutHandler, MouseWheelHandler {
     public void composeMainMenu(MenuBar mainMenuBar) {
     	mainMenuBar.addItem(getClassCheckItem(LS("Add Wire"), "WireElm"));
     	mainMenuBar.addItem(getClassCheckItem(LS("Add Resistor"), "ResistorElm"));
+    	mainMenuBar.addItem(getClassCheckItem(LS("Add Arduino Pin"), "ArduinoPinElm"));	//ADDED BY MARK MEGARRY
 
     	MenuBar passMenuBar = new MenuBar(true);
     	passMenuBar.addItem(getClassCheckItem(LS("Add Capacitor"), "CapacitorElm"));
@@ -4827,6 +4828,7 @@ MouseOutHandler, MouseWheelHandler {
     	case 409: return new OpAmpRealElm(x1, y1, x2, y2, f, st);
     	case 410: return new CustomCompositeElm(x1, y1, x2, y2, f, st);
     	case 411: return new AudioInputElm(x1, y1, x2, y2, f, st);
+    	case 412: return new ArduinoPinElm(x1, y1, x2, y2, f, st);	//Added by Mark Megarry
         }
     	return null;
     }
@@ -5061,6 +5063,8 @@ MouseOutHandler, MouseWheelHandler {
 		return (CircuitElm) new CustomCompositeElm(x1, y1);
     	if (n=="AudioInputElm")
 		return (CircuitElm) new AudioInputElm(x1, y1);
+    	if (n=="ArduinoPinElm")	//ADDED BY MARK MEGARRY
+		return (CircuitElm) new ArduinoPinElm(x1, y1);
     	return null;
     }
     
