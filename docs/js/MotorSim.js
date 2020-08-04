@@ -1,11 +1,7 @@
 //Created by Matthew Reaney, cylinder physics updated by Mark Megarry June-July 2020			
 			//variable declaration
 			var checkElms = new JSCircuitElm(0);
-<<<<<<< HEAD
 			while(checkElms.getElmListSize() == 0){
-=======
-	    while(checkElms.getElmListSize() == 0){
->>>>>>> 9e556e7d2e3dbcc5ea8d543360524ad98d890c78
 				console.log("ERROR: ELMLIST EMPTY");
 			}	//Wait for JSCircuitElm to load
             let physicsWorld, scene, camera, renderer, rigidBodies = [], tmpTrans = null
