@@ -8,7 +8,9 @@ ThreeFalstad is currently being developed by Mark Megarry (mmegarry1@gmail.com) 
 
 
 ## Building
-***TODO***
+To build the CircuitJS1 part of the application, follow the instructions at https://github.com/pfalstad/circuitjs1#building-the-web-application ***Note:You must be using GWT version 2.8.1 and JDK 1.8.0 to build this. The compiler argument -generateJsInteropExports must be passed***
+
+Three.js and Ammo.js should be called from index.html.  Currently, the motor simulation file is injected via physicsInject() in /src/com/lushprojects/circuitjs1/client/CirSim.java.  If you wish to change the name of this simulation file, you must also rename it here.
 
 ## Running
 To run ThreeFalstad, run /war/circuitjs.html.  By default, the circuit loaded will be /war/circuitjs1/circuits/MotorSim.txt and the physics simulation loaded will be /war/js/MotorSim.js
