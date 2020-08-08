@@ -4,11 +4,9 @@
 
 ThreeFalstad is a simulator combining circuit simulation (provided by CircuitJS1) and physics simulation (provided by Three.js and Ammo.js). 
 
-ThreeFalstad is currently being developed by Mark Megarry (mmegarry1@gmail.com) with a great amount of support from John Bustard, Matthew Reaney, Sam Ross and Joseph Stevenson.
-
 
 ## Building
-To build the CircuitJS1 part of the application, follow the instructions at https://github.com/pfalstad/circuitjs1#building-the-web-application ***Note:You must be using GWT version 2.8.1 and JDK 1.8.0 to build this. The compiler argument -generateJsInteropExports must be passed***
+To build the CircuitJS1 part of the application, follow the instructions at https://github.com/pfalstad/circuitjs1#building-the-web-application ***Note:You must be using GWT version 2.8.1 and JDK 1.8.0 to build this (Java SE Development kit available at https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html). The compiler argument -generateJsInteropExports must be passed***
 
 Three.js and Ammo.js should be called from index.html.  Currently, the motor simulation file is injected via physicsInject() in /src/com/lushprojects/circuitjs1/client/CirSim.java.  If you wish to change the name of this simulation file, you must also rename it here.
 
